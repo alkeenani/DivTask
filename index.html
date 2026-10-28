@@ -14,133 +14,22 @@
   </head>
   <body>
     <!--? Start SideBar Container  -->
-    <aside id="sidebar">
-      <div class="logo">
-        <div class="icon">
-          <i class="fa-solid fa-bolt"></i>
-        </div>
-        DivTask
-        <button class="colse-bar">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <div class="list">
-        <p>WorkSpace</p>
-        <nav>
-          <ul>
-            <li class="active">
-              <i class="fa-solid fa-border-all"></i>
-              <a href="./index.html">Dashboard</a>
-            </li>
-            <li>
-              <i class="fa-regular fa-folder"></i>
-              <a href="./project.html">Projects</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-check"></i>
-              <a href="./tasks.html">Tasks</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-note-sticky"></i>
-              <a href="./notes.html">Notes</a>
-            </li>
-            <li>
-              <i class="fa-brands fa-github"></i>
-              <a href="./developers.html">GitHub Developers</a>
-            </li>
-            <li class="genral-tittle">
-              <p>Genral</p>
-            </li>
-            <li>
-              <i class="fa-solid fa-gear"></i>
-              <a href="./settings.html">Settings</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <!--? SideBar Bottom -->
-
-      <div id="sidebar-bottom">
-        <div class="upgarde">
-          <i class="fa-solid fa-arrow-trend-up"></i>
-          <p>Unlock more features</p>
-
-          <small> Upgrade your workspace and do more.</small>
-          <button>Upgarde Plan</button>
-        </div>
-        <div></div>
-        <div class="info-user">
-          <div class="imge-profile">MA</div>
-          <div>
-            <p>Nohamed Alkenani</p>
-            <small>mohameed@gamil.com</small>
-          </div>
-          <button class="log-out">
-            <i class="fa-solid fa-right-from-bracket"></i>
-          </button>
-        </div>
-      </div>
-    </aside>
+    <aside id="sidebar"></aside>
     <!--? End SideBar Container  -->
 
     <!--? Start Header Container  -->
-    <header id="header">
-      <div class="section-name">
-        <button class="btns bar">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="barnd">
-          <h2>Dashboard</h2>
-          <div class="date">
-            <p>Monday ,Dec 12</p>
-          </div>
-        </div>
-      </div>
-      <div class="header-action">
-        <!--? Serach Box -->
-        <div class="search-box">
-          <input type="text" placeholder="Search....." />
-        </div>
-        <!--? Dark Mode -->
-        <button class="dark-mode-btn btns">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <!--? Notifications -->
-        <button class="notifications-btn btns">
-          <i class="fa-regular fa-bell"></i>
-        </button>
-        <!--? Notifications  List -->
-        <div class="notifications-list card">
-          <div class="heading icons">
-            <p>Notifications</p>
-            <button class="mark-as-read">Mark All As Read</button>
-          </div>
-          <div class="reslut empty">
-            <div class="icon">
-              <i class="fa-solid fa-box-open"></i>
-            </div>
-            <p>You're all caught up. Workspace activity will appear here.</p>
-          </div>
-        </div>
-        <!-- ? User -->
-        <div class="header-user">
-          <div class="imge-profile">MA</div>
-          <div class="name">
-            <h2 class="header-profile-name">Moahmed Alkeani</h2>
-            <small class="header-profile-role">Developer</small>
-          </div>
-        </div>
-      </div>
-    </header>
+    <header id="header"></header>
     <!--? End Header Container  -->
 
     <!--? Start Dashboard -->
     <main class="page dashboard">
       <!--?  Start Welcome Section  -->
       <section class="welcome-section">
-        <p>YOUR WORKSPACE</p>
-        <h2>Good morning, Mohamed 👋</h2>
-        <h3>Here’s what’s happening with your projects today</h3>
+        <div>
+          <p>YOUR WORKSPACE</p>
+          <h2 class="user-name">Good morning, Mohamed 👋</h2>
+          <h3>Here’s what’s happening with your projects today</h3>
+        </div>
         <div class="control-btn">
           <button class="add-task">
             <i class="fa-solid fa-check"></i>
@@ -204,24 +93,32 @@
         </article>
         <!--? End Complite Task State  -->
         <!--? Start Overall Progress State  -->
-        <article class="state-card tasks-complited">
+        <article class="state-card">
           <div class="icons">
-            <div class="stat-icon blue">
-              <i class="fa-solid fa-check"></i>
-            </div>
-            <button>
+            <div class="stat-icon orange">
               <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+
+            <button>
+              <i class="fa-solid fa-ellipsis"></i>
             </button>
           </div>
-          <p>Completed Tasks</p>
-          <h2 class="count">10</h2>
-          <div class="sate-value">
-            <b>17%</b>
-            <div class="mini-range">
-              <span>17</span>
+
+          <p>Overall Progress</p>
+
+          <div class="stat-value">
+            <b>0%</b>
+            <div
+              class="mini-ring"
+              style="
+                background: conic-gradient(var(--primary) 0%, var(--border) 0);
+              "
+            >
+              <span>0</span>
             </div>
           </div>
-          <small class="positive">↗ +2 this month</small>
+
+          <small class="positive"> ↗ +5% from last month </small>
         </article>
         <!--? End Overall Progress State  -->
       </section>
@@ -231,15 +128,18 @@
         <!--? Start Project Progress   -->
         <article class="card progress-panal">
           <div class="heading-card">
-            <h3>Project Progress</h3>
-            <p class="card-description">Your active projects at a glance</p>
-            <a href="./project.html" class="veiw-All">
+            <div>
+              <h3>Project Progress</h3>
+              <p class="card-description">Your active projects at a glance</p>
+            </div>
+
+            <a href="./project.html" class="veiw-all">
               View All <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
           <div class="project-rows">
             <div class="project-row">
-              <div class="stat-icon pruple">
+              <div class="stat-icon purple">
                 <i class="fa-regular fa-folder"></i>
               </div>
               <div class="project-info">
@@ -247,12 +147,13 @@
                   <b>DivTask Dashboard</b>
                   <small>11 of 15 tasks</small>
                 </div>
-                <div class="progerss">
-                  <span class="pruple"></span>
+                <div class="progress">
+                  <span class="purple"></span>
                 </div>
-                <div class="present">17%</div>
               </div>
+              <div class="present">17%</div>
             </div>
+
             <div class="project-row">
               <div class="stat-icon blue">
                 <i class="fa-regular fa-folder"></i>
@@ -262,11 +163,11 @@
                   <b>DivTask Dashboard</b>
                   <small>11 of 15 tasks</small>
                 </div>
-                <div class="progerss">
+                <div class="progress">
                   <span class="blue"></span>
                 </div>
-                <div class="present">17%</div>
               </div>
+              <div class="present">17%</div>
             </div>
             <div class="project-row">
               <div class="stat-icon green">
@@ -277,11 +178,11 @@
                   <b>DivTask Dashboard</b>
                   <small>11 of 15 tasks</small>
                 </div>
-                <div class="progerss">
+                <div class="progress">
                   <span class="green"></span>
                 </div>
-                <div class="present">17%</div>
               </div>
+              <div class="present">17%</div>
             </div>
           </div>
         </article>
@@ -289,8 +190,11 @@
         <!--?  Start Upcoming Deadlines   -->
         <article class="card upcoming-daedlines">
           <div class="heading-card">
-            <h3>Deadlines</h3>
-            <p class="card-description">Stay ahead of schedule</p>
+            <div>
+              <h3>Deadlines</h3>
+              <p class="card-description">Stay ahead of schedule</p>
+            </div>
+
             <button class="btns">
               <i class="fa-regular fa-calendar-days"></i>
             </button>
@@ -329,9 +233,12 @@
       <!--?  Start Recent Tasks   -->
       <section class="card recent-tasks">
         <div class="heading-card">
-          <h3>Recent Tasks</h3>
-          <p class="card-description">Keep the momentum going</p>
-          <a href="./project.html" class="veiw-All">
+          <div>
+            <h3>Recent Tasks</h3>
+            <p class="card-description">Keep the momentum going</p>
+          </div>
+
+          <a href="./project.html" class="veiw-all">
             View All <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
@@ -345,7 +252,9 @@
           </div>
           <div class="table-body">
             <div>
-              <b> <input type="checkbox" name="" id="" />DateBase </b>
+              <b>
+                <input type="checkbox" name="" id="" /><span>DateBase</span>
+              </b>
               <span>DivTask Dashboard</span>
               <span class="badge High">High</span>
               <span class="badge Todo">Todo</span>
@@ -357,7 +266,9 @@
               </button>
             </div>
             <div>
-              <b> <input type="checkbox" name="" id="" />DateBase </b>
+              <b>
+                <input type="checkbox" name="" id="" /> <span>DateBase</span>
+              </b>
               <span>DivTask Dashboard</span>
               <span class="badge High">High</span>
               <span class="badge Todo">Todo</span>
@@ -369,7 +280,9 @@
               </button>
             </div>
             <div>
-              <b> <input type="checkbox" name="" id="" />DateBase </b>
+              <b>
+                <input type="checkbox" name="" id="" /> <span>DateBase</span>
+              </b>
               <span>DivTask Dashboard</span>
               <span class="badge High">High</span>
               <span class="badge Todo">Todo</span>
@@ -381,7 +294,9 @@
               </button>
             </div>
             <div>
-              <b> <input type="checkbox" name="" id="" />DateBase </b>
+              <b>
+                <input type="checkbox" name="" id="" /> <span>DateBase</span>
+              </b>
               <span>DivTask Dashboard</span>
               <span class="badge High">High</span>
               <span class="badge Todo">Todo</span>
@@ -398,5 +313,7 @@
       <!--?  End Recent Tasks   -->
     </main>
     <!--? End Dashboard -->
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
