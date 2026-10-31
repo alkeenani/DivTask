@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--? Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <!--? Start SideBar Container  -->
+    <aside id="sidebar"></aside>
+    <!--? End SideBar Container  -->
+
+    <!--? Start Header Container  -->
+    <header id="header"></header>
+    <!--? End Header Container  -->
+
+    <!--? Start Project Page   -->
+    <div class="page project">
+      <div class="page-heading">
+        <div>
+          <p>WORKSPACE</p>
+
+          <h2 class="user-name">Project</h2>
+
+          <h3>Create, organize, and track everything you're building.</h3>
+        </div>
+        <button class="new-project">
+          <i class="fa-solid fa-plus"></i>
+
+          New Project
+        </button>
+      </div>
+
+      <!--? Start Project Filter Banner -->
+
+      <div class="tolbar">
+        <div class="search-box">
+          <input type="text" placeholder="Search projects..." />
+        </div>
+
+        <button class="active" data-filter="All">All projects</button>
+        <button data-filter="Progress">In progress</button>
+        <button data-filter="Completed">Completed</button>
+      </div>
+      <!--? End Project Filter Banner -->
+
+      <!--? Start Crads Projects  -->
+
+      <div class="cards">
+        <div class="project-card">
+          <div class="icons">
+            <div class="stat-icon blue">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+
+            <div class="item-actions">
+              <summary>
+                <i class="fa-solid fa-ellipsis"></i>
+              </summary>
+              <div>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>Edit
+                </button>
+                <button class="delete-project">
+                  <i class="fa-regular fa-trash-can"></i>
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <div class="badge type">Education</div>
+            <div class="badge state-in-Todo">Todo</div>
+          </div>
+          <h3>DivTask</h3>
+          <p>l;zxkd</p>
+          <div class="progress-label">
+            <div class="info">
+              <div>
+                <p>progress</p>
+                <p>0%</p>
+              </div>
+              <span
+                class="progress-fill blue"
+                data-progress="0%"
+                style="width: 0%"
+              ></span>
+            </div>
+            <div class="project-card-foot">
+              <span> <i class="fa-solid fa-check"></i>0 of 0tasks</span>
+              <span
+                ><i class="fa-regular fa-calendar-days"></i>Oct 16, 2026
+              </span>
+            </div>
+
+            <button class="open-project">
+              Open Project <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="icons">
+            <div class="stat-icon red">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+
+            <div class="item-actions">
+              <summary>
+                <i class="fa-solid fa-ellipsis"></i>
+              </summary>
+              <div>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>Edit
+                </button>
+                <button class="delete-project">
+                  <i class="fa-regular fa-trash-can"></i>
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <div class="badge type">Education</div>
+            <div class="badge state-in-Complited">Todo</div>
+          </div>
+          <h3>DivTask</h3>
+          <p>l;zxkd</p>
+          <div class="progress-label">
+            <div class="info">
+              <div>
+                <p>progress</p>
+                <p>0%</p>
+              </div>
+              <span
+                class="progress-fill red"
+                data-progress="0%"
+                style="width: 0%"
+              ></span>
+            </div>
+            <div class="project-card-foot">
+              <span> <i class="fa-solid fa-check"></i>0 of 0tasks</span>
+              <span
+                ><i class="fa-regular fa-calendar-days"></i>Oct 16, 2026
+              </span>
+            </div>
+
+            <button class="open-project" data-project-id="1792165213558">
+              Open Project <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="icons">
+            <div class="stat-icon orange">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+
+            <div class="item-actions">
+              <summary>
+                <i class="fa-solid fa-ellipsis"></i>
+              </summary>
+              <div>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>Edit
+                </button>
+                <button class="delete-project">
+                  <i class="fa-regular fa-trash-can"></i>
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <div class="badge type">Education</div>
+            <div class="badge state-in-Progress">Todo</div>
+          </div>
+          <h3>DivTask</h3>
+          <p>l;zxkd</p>
+          <div class="progress-label">
+            <div class="info">
+              <div>
+                <p>progress</p>
+                <p>0%</p>
+              </div>
+              <span
+                class="progress-fill orange"
+                data-progress="0%"
+                style="width: 0%"
+              ></span>
+            </div>
+            <div class="project-card-foot">
+              <span> <i class="fa-solid fa-check"></i>0 of 0tasks</span>
+              <span
+                ><i class="fa-regular fa-calendar-days"></i>Oct 16, 2026
+              </span>
+            </div>
+
+            <button class="open-project" data-project-id="1792165213558">
+              Open Project <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="icons">
+            <div class="stat-icon purple">
+              <i class="fa-regular fa-folder"></i>
+            </div>
+
+            <div class="item-actions">
+              <summary>
+                <i class="fa-solid fa-ellipsis"></i>
+              </summary>
+              <div>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>Edit
+                </button>
+                <button class="delete-project">
+                  <i class="fa-regular fa-trash-can"></i>
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <div class="badge type">Education</div>
+            <div class="badge state-in-Overdue">Overdue</div>
+          </div>
+          <h3>DivTask</h3>
+          <p>l;zxkd</p>
+          <div class="progress-label">
+            <div class="info">
+              <div>
+                <p>progress</p>
+                <p>0%</p>
+              </div>
+              <span
+                class="progress-fill purple"
+                data-progress="0%"
+                style="width: 0%"
+              ></span>
+            </div>
+            <div class="project-card-foot">
+              <span> <i class="fa-solid fa-check"></i>0 of 0tasks</span>
+              <span
+                ><i class="fa-regular fa-calendar-days"></i>Oct 16, 2026
+              </span>
+            </div>
+
+            <button class="open-project" data-project-id="1792165213558">
+              Open Project <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--? End Crads Projects  -->
+    </div>
+    <!--? End Project Page   -->
+
+    <script src="./js/sidebar.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

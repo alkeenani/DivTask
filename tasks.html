@@ -20,7 +20,190 @@
     <!--? Start Header Container  -->
     <header id="header"></header>
     <!--? End Header Container  -->
+    <!-- ? Start Task Container -->
 
+    <div class="page task-section">
+      <div class="page-heading">
+        <div>
+          <p>FOCUS</p>
+          <h2 class="user-name">My Tasks</h2>
+          <h3>Prioritize your work and make every day count</h3>
+        </div>
+        <button class="add-task">
+          <i class="fa-solid fa-plus"></i>
+          Add Task
+        </button>
+      </div>
+    <!--? Start Task Summary -->
+    
+    <div class="task-summray">
+      <div class="card">
+        <div class="stat-icon purple">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="info total">
+          <h3 class="count">0</h3>
+          <p>Total Tasks</p>
+        </div>
+      </div>
+      <div class="card in-progress">
+        <div class="stat-icon blue">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+        <div class="info">
+            <h3 class="count">0</h2>
+              <p>In Progress</p>
+          </div>
+        </div>
+        <div class="card completed">
+          <div class="stat-icon green">
+            <i class="fa-solid fa-border-all"></i>
+          </div>
+          <div class="info">
+            <h3 class="count">0</h3>
+            <p>Completed</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="stat-icon orange">
+            <i class="fa-solid fa-flag"></i>
+          </div>
+          <div class="info">
+            <h3 class="count">0</h3>
+            <p>Due Soon</p>
+          </div>
+        </div>
+      </div>
+      <!--? End Task Summary -->
+      <!--? Start Task Table -->
+
+      <div class="card task-table">
+        <!--? Start  Tolbar Container  -->
+        <div class="tolbar">
+          <div class="search-box">
+            <input type="text" placeholder="Search...">
+          </div>
+          <div class="fillter-tasks">
+          <button class="active" data-category="All">All</button>
+          <button  data-category="In-Progress">In-Progress</button>
+          <button  data-category="In-Completed">Completed</button>
+          <button  data-category="In-Todo">Todo</button>
+          <button  data-category="In-Overdue">Overdue</button>
+        </div>
+        </div>
+        <!--? End  Tolbar Container  -->
+
+        <!--? Start Filter Task  -->
+        
+        <!--? End Filter Task  -->
+
+        <!-- ? Start Table Rows -->
+
+        <div class="table-rows">
+          <!--? Start Table Head  -->
+          <div class="table-head">
+            <div>Task</div>
+            <div>Project</div>
+            <div>Priority</div>
+            <div>Status</div>
+            <div>Du Date</div>
+          </div>
+          <!--? End Table Head  -->
+          <!--? Start Table Body  -->
+          <div class="table-body">
+            <!-- ? Start  Task Row -->
+            <div class="All">
+              <b>
+                <input type="checkbox" >
+                <span>Div</span>
+              </b>
+              <span class="task-project-name">DivTask</span>
+              <span class="badge High">High</span>
+              <span class="badge state-in-Complited">Complited</span>
+              <span class="due-day crrunt">
+                <i class="fa-solid fa-clock"></i>
+                2026-10-11
+              </span>
+
+              <div class="item-actions">
+              <summary>
+                <i class="fa-solid fa-ellipsis"></i>
+              </summary>
+              <div>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>Edit
+                </button>
+                <button class="delete-project">
+                  <i class="fa-regular fa-trash-can"></i>
+                  Delete
+                </button>
+              </div>
+            </div>
+            </div>
+            <div class="All">
+              <b>
+                <input type="checkbox" >
+                <span>Div</span>
+              </b>
+              <span class="task-project-name">DivTask</span>
+              <span class="badge High">High</span>
+              <span class="badge state-in-Complited">Complited</span>
+              <span class="due-day crrunt">
+                <i class="fa-solid fa-clock"></i>
+                2026-10-11
+              </span>
+
+              <div class="item-actions">
+              <summary>
+                <i class="fa-solid fa-ellipsis"></i>
+              </summary>
+              <div>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>Edit
+                </button>
+                <button class="delete-project">
+                  <i class="fa-regular fa-trash-can"></i>
+                  Delete
+                </button>
+              </div>
+            </div>
+            </div>
+            <div class="All">
+              <b>
+                <input type="checkbox" >
+                <span>Div</span>
+              </b>
+              <span class="task-project-name">DivTask</span>
+              <span class="badge High">High</span>
+              <span class="badge state-in-Complited">Complited</span>
+              <span class="due-day crrunt">
+                <i class="fa-solid fa-clock"></i>
+                2026-10-11
+              </span>
+
+              <div class="item-actions">
+              <summary>
+                <i class="fa-solid fa-ellipsis"></i>
+              </summary>
+              <div>
+                <button class="edit-btn">
+                  <i class="fa-regular fa-pen-to-square"></i>Edit
+                </button>
+                <button class="delete-project">
+                  <i class="fa-regular fa-trash-can"></i>
+                  Delete
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <!--? End Table Body  -->
+        </div>
+        <!-- ? End Table Rows -->
+      </div>
+      <!--? End  Task Table -->
+    </div>
+    <!-- ? End Task Container -->
     <script src="./js/sidebar.js"></script>
 
     <script src="./js/main.js"></script>

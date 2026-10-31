@@ -20,7 +20,103 @@
     <!--? Start Header Container  -->
     <header id="header"></header>
     <!--? End Header Container  -->
+    <!--? Start Settings Page   -->
+    <div class="page settings-section">
+      <!--? Satrt Heading Page  -->
+      <div class="page-heading">
+        <div>
+          <p>PREFERENCES</p>
+          <h2 class="user-name">Settings</h2>
+          <h3>Manage your profile and personalize your DevTask experience.</h3>
+        </div>
+      </div>
+      <!--? End Heading Page  -->
 
+      <div class="settings-layout">
+        <div class="card">
+          <div class="profile-edit">
+            <div class="imge-profile">MA</div>
+            <div class="instructs">
+              <button class="change-photo">Change Photo</button>
+              <input type="file" id="photo" accept="image/*" hidden />
+              <p>JPG , GIF OR PNG MAX 2MB</p>
+            </div>
+          </div>
+          <!--? Start From Grid  -->
+          <div class="form-grid">
+            <label for="first-name"
+              >First Name
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Enter First Name"
+                autocomplete="given-name"
+              />
+            </label>
+            <label for="last-name"
+              >Last Name
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Enter Last Name"
+                autocomplete="family-name"
+              />
+            </label>
+            <label for="role"
+              >Role
+              <input
+                type="text"
+                id="role"
+                placeholder="Enter Role"
+                autocomplete="organization-title"
+              />
+            </label>
+            <label for="email"
+              >Email
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Gmail"
+                autocomplete="email"
+              />
+            </label>
+
+            <label for="bio" class="full"
+              >Bio
+              <textarea
+                id="bio"
+                placeholder="Tell something about yourself"
+              ></textarea>
+            </label>
+          </div>
+          <!--? End From Grid  -->
+          <!--? Start Settings Action  -->
+          <div class="settings-actions">
+            <button class="rest-profile">Rest</button>
+            <button class="save-profile">Save</button>
+          </div>
+        </div>
+        <!--? End Settings Action  -->
+        <!--? Start Card Settings Data  -->
+        <div class="card settings-data">
+          <div class="heading-card">
+            <div>
+              <h3>Saved data</h3>
+
+              <p>DevTask has no server. Everything lives in this browser.</p>
+            </div>
+          </div>
+          <div class="data-rows">
+            <div><span>Tasks</span><b class="count-tasks">0</b></div>
+            <div><span>Projects</span><b class="count-projects">0</b></div>
+            <div><span>Notes</span><b class="count-notes">0</b></div>
+            <div><span>Storage used</span><b class="count-size">0 B</b></div>
+          </div>
+        </div>
+        <!--? End Card Settings Data  -->
+      </div>
+    </div>
+    <!--? End Settings Page   -->
     <script src="./js/sidebar.js"></script>
 
     <script src="./js/main.js"></script>
