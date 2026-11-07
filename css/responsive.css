@@ -1,0 +1,150 @@
+/*? Tablets & Small Laptops */
+
+@media (max-width: 1190px) {
+  /*? Layout */
+
+  .page,
+  #header {
+    margin-left: 0;
+  }
+
+  /*? Sidebar */
+
+  #sidebar {
+    transform: translateX(-100%);
+    box-shadow: 20px 0 50px #0002;
+  }
+
+  #sidebar.open .close-bar {
+    display: block;
+  }
+
+  .bar {
+    display: block;
+  }
+
+  .close-bar {
+    display: none;
+  }
+
+  /*? Header */
+
+  .header-action .search-box {
+    display: none;
+  }
+
+  /*? Dashboard */
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+/*? Tablets */
+
+@media (max-width: 1110px) {
+  /*? Summary Grids */
+
+  .state-grid,
+  .task-summary,
+  .note-section .note-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*? Mobile */
+
+@media (max-width: 768px) {
+  /*? Brand */
+
+  .brand h2 {
+    font-size: 14px;
+  }
+
+  .brand .date {
+    font-size: 7px;
+  }
+
+  /*? Single-Column Grids */
+
+  .state-grid,
+  .task-summray,
+  .note-section .note-summary,
+  .repo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /*? Page Headings */
+
+  .welcome-section .user-name {
+    font-size: 15px;
+  }
+
+  .welcome-section h3 {
+    font-size: 10px;
+  }
+
+  .page-heading {
+    gap: 12px;
+  }
+
+  .page-heading > div p {
+    font-size: 7px !important;
+  }
+
+  .page-heading > div h2 {
+    font-size: 20px !important;
+  }
+
+  .page-heading > div h3 {
+    font-size: 9px !important;
+  }
+
+  .add-list,
+  .project-list {
+    padding: 10px;
+  }
+
+  /*? Action Buttons */
+
+  .new-project,
+  .add-task {
+    padding: 0 8px;
+    font-size: 10px;
+  }
+
+  /*? Tasks Table */
+
+  .task-table .table-rows .table-body div {
+    font-size: 4px;
+    padding: 4px 3px;
+  }
+
+  .task-table .table-rows .table-body div input {
+    width: 8px;
+  }
+
+  /*? Notes */
+
+  .note-section .search-box input {
+    width: 100%;
+  }
+
+  /*? Settings */
+
+  .settings-section .settings-layout,
+  .settings-layout .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-actions {
+    justify-content: stretch;
+  }
+
+  .settings-actions button {
+    flex: 1;
+  }
+
+  /*? Developers */
+}

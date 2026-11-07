@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
     <!--? Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="stylesheet" href="./css/responsive.css" />
     <title>Document</title>
   </head>
   <body>
+    <!--? Start Mobile Overlay  -->
+    <div class="mobile-overlay"></div>
+    <!--? End Mobile Overlay  -->
+
     <!--? Start SideBar Container  -->
     <aside id="sidebar"></aside>
     <!--? End SideBar Container  -->
@@ -116,7 +122,7 @@
 
     <!--? End Note Page  -->
     <script src="./js/sidebar.js"></script>
-
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/notes.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

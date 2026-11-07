@@ -1,0 +1,46 @@
+<div class="btn-overlay"></div>
+<div class="add-list">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-icon state-icon">
+        <i class="fa-solid fa-note-sticky"></i>
+      </div>
+      <div>
+        <h2>New note</h2>
+        <p>Add the details below to get started.</p>
+      </div>
+      <button class="closebtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal-body">
+      <label
+        >Note title<input
+          class="note-name"
+          placeholder="Enter note title"
+          type="text"
+      /></label>
+      <label
+        >Note<textarea
+          class="note-des"
+          placeholder="Write the note..."
+        ></textarea></label
+      ><label
+        >Category<select class="note-project">
+          <option disabled selected>Select category</option>
+        </select></label
+      >
+      <label class="Extent-of-importance">
+        Importance
+        <select class="importance">
+          <option disabled selected>select Extent of importance</option>
+          <option value="important">Important</option>
+          <option value="normal">Normal</option>
+        </select></label
+      ><label>Date<input placeholder="Enter date" type="date" /></label>
+    </div>
+    <p class="form-error"></p>
+    <div class="modal-foot">
+      <button class="cancel btn">Cancel</button
+      ><button class="create create-note btn">Create note</button>
+    </div>
+  </div>
+</div>

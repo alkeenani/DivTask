@@ -1,0 +1,70 @@
+<div class="btn-overlay"></div>
+<!--? Start Project List -->
+<div class="project-list">
+  <div class="modal">
+    <!--? Start  Modal Head  -->
+    <div class="modal-head">
+      <div class="modal-icon state-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div>
+        <h2>New Project</h2>
+        <p>Add the details below to get started</p>
+      </div>
+      <button class="colsebtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <!--? End  Modal Head  -->
+    <!--? Start Modal Body  -->
+    <div class="modal-body">
+      <label for="">
+        Project Tittle
+        <input
+          type="text"
+          class="project-name"
+          placeholder="Enter Task Tittle"
+        />
+      </label>
+      <label for="">
+        Discarption
+        <textarea class="project-des" placeholder="Add Discarption"></textarea>
+      </label>
+      <label for=""
+        >Project
+        <select class="project-categroy">
+          <option value="" selected disabled>Select Project</option>
+          <option value="">Web App</option>
+          <option value="">Desgin</option>
+          <option value="">Education</option>
+          <option value="">Backend</option>
+          <option value="">Other</option>
+        </select>
+      </label>
+      <label class="Extent-of-imporatnce">
+        <select class="importance" id="">
+          <option value="" disabled selected>
+            Select Extent Of importance
+          </option>
+          <option value="High">High</option>
+          <option value="Meduim">Meduim</option>
+          <option value="Low">Low</option>
+        </select>
+      </label>
+      <label>Deadline<input placeholder="Enter deadline" type="date" /></label>
+      <div class="color-row">
+        <button data-color="purple" class="active" title="Purple"></button>
+        <button data-color="red" title="Red"></button>
+        <button data-color="green" title="Green"></button>
+        <button data-color="orange" title="Orange"></button>
+        <button data-color="blue" title="Blue"></button>
+      </div>
+    </div>
+    <!--? End Modal Body  -->
+    <!--? Start Modal Foot  -->
+    <div class="modal-foot">
+      <button class="cancel btn">Cancel</button>
+      <button class="create-task btn">Create Task</button>
+    </div>
+    <!--? End Modal Foot  -->
+  </div>
+</div>
+<!--? End Project List -->
