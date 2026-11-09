@@ -1,53 +1,50 @@
 <div class="btn-overlay"></div>
 <div class="add-list">
   <div class="modal">
-    <!--? Start Modal Head  -->
     <div class="modal-head">
       <div class="modal-icon state-icon">
         <i class="fa-solid fa-check"></i>
       </div>
       <div>
-        <h2>New Task</h2>
-        <p>Add the details below to get started</p>
+        <h2>New task</h2>
+        <p>Add the details below to get started.</p>
       </div>
       <button class="closebtn"><i class="fa-solid fa-xmark"></i></button>
     </div>
-    <!--? End Modal Head  -->
-    <!--? Start Modal Body  -->
     <div class="modal-body">
-      <label for="">
-        Task Tittle
-        <input type="text" class="task-name" placeholder="Enter Task Tittle" />
-      </label>
-      <label for="">
-        Discarption
-        <textarea class="task-des" placeholder="Add Discarption"></textarea>
+      <label
+        >Task title<input
+          class="task-name"
+          placeholder="Enter task title"
+          type="text"
+      /></label>
+      <label
+        >Description<textarea
+          class="task-des"
+          placeholder="Add description..."
+        ></textarea>
       </label>
       <label>
         Project
+
         <select class="task-project">
-          <option value="" selected disabled>Select Project</option>
+          <option value="" selected disabled>Select project</option>
           <option value="other">Other</option>
         </select>
       </label>
+
       <label class="Extent-of-importance">
-        <select class="importance" id="">
-          <option value="" disabled selected>
-            Select Extent Of importance
-          </option>
+        <select class="importance">
+          <option disabled selected>select Extent of importance</option>
           <option value="High">High</option>
-          <option value="Meduim">Meduim</option>
+          <option value="Medium">Medium</option>
           <option value="Low">Low</option>
-        </select>
-      </label>
-      <label>Deadline<input placeholder="Enter deadline" type="date" /></label>
+        </select></label
+      ><label>Deadline<input placeholder="Enter deadline" type="date" /></label>
     </div>
-    <!--? End Modal Body  -->
-    <!--? Start Modal Foot  -->
     <div class="modal-foot">
-      <button class="cancel btn">Cancel</button>
-      <button class="create-task btn">Create Task</button>
+      <button class="cancel btn">Cancel</button
+      ><button class="create create-task btn">Create task</button>
     </div>
-    <!--? End Modal Foot  -->
   </div>
 </div>

@@ -99,17 +99,17 @@ fetch("./components/addproject.html")
     );
 
     //? Project Search & Filter
-    const searchInput = document.querySelector(".toolbar .search-box input");
+    const searchInput = document.querySelector(".tolbar .search-box input");
 
     const filterButtons = document.querySelectorAll(
-      ".toolbar button[data-filter]",
+      ".tolbar button[data-filter]",
     );
 
     function filterProjects() {
       const searchValue = searchInput?.value.trim().toLowerCase() || "";
 
       const activeFilter =
-        document.querySelector(".toolbar button[data-filter].active")?.dataset
+        document.querySelector(".tolbar button[data-filter].active")?.dataset
           .filter || "All";
 
       target.querySelectorAll(":scope > div").forEach((cardWrapper) => {
