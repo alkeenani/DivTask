@@ -1,39 +1,56 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--? Font Awesome -->
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <title>Dashboard</title>
+
+    <title>DevTask</title>
   </head>
+
   <body>
-    <!--? Start Mobile Overlay  -->
+    <!--? Start Splach Screen Container -->
     <div class="mobile-overlay"></div>
-    <!--? End Mobile Overlay  -->
 
-    <!--? Start SideBar Container  -->
+    <!--? End Splach Screen Container -->
+
+    <!--? Start Aside Container -->
+
     <aside id="sidebar"></aside>
-    <!--? End SideBar Container  -->
 
-    <!--? Start Header Container  -->
+    <!--? End Aside Container -->
+
+    <!--? Start Header -->
+
     <header id="header"></header>
-    <!--? End Header Container  -->
+
+    <!--? End Header -->
 
     <!--? Start Dashboard -->
+
     <main class="page dashboard">
-      <!--?  Start Welcome Section  -->
+      <!--? Start Welcome Section -->
+
       <section class="welcome-section">
         <div>
           <p>YOUR WORKSPACE</p>
+
           <h2 class="user-name">Good morning, Mohamed 👋</h2>
-          <h3>Here’s what’s happening with your projects today</h3>
+
+          <h3>Here’s what’s happening with your projects today.</h3>
         </div>
+
         <div class="control-btn">
           <button class="add-task">
             <i class="fa-solid fa-check"></i>
@@ -48,56 +65,74 @@
           </button>
         </div>
       </section>
-      <!--?  End Welcome Section  -->
-      <!--?  Start State Section  -->
-      <section class="state-grid">
-        <!--? Start Project State  -->
-        <article class="state-card project">
+
+      <!--? End Welcome Section -->
+
+      <!--? Start Stats -->
+
+      <section class="stats-grid">
+        <!-- Total Projects -->
+
+        <article class="stat-card project-card">
           <div class="icons">
-            <div class="stat-icon red">
+            <div class="stat-icon purple">
               <i class="fa-regular fa-folder"></i>
             </div>
+
             <button>
               <i class="fa-solid fa-ellipsis"></i>
             </button>
           </div>
-          <p>Total Project</p>
-          <h2 class="count">20</h2>
-          <small class="positive">↗ +2 this month</small>
+
+          <p>Total Projects</p>
+
+          <h3 class="count">0</h3>
+
+          <small class="positive"> ↗ +2 this month </small>
         </article>
-        <!--? End Project State  -->
-        <!--? Start Task State  -->
-        <article class="state-card task-card">
-          <div class="icons">
-            <div class="stat-icon green">
-              <i class="fa-solid fa-check"></i>
-            </div>
-            <button>
-              <i class="fa-solid fa-ellipsis"></i>
-            </button>
-          </div>
-          <p>Total Tasks</p>
-          <h2 class="count">20</h2>
-          <small class="positive">↗ +2 this month</small>
-        </article>
-        <!--? End Task State  -->
-        <!--? Start Complite Task State  -->
-        <article class="state-card tasks-complited">
+
+        <!-- Total Tasks -->
+
+        <article class="stat-card tasks-card">
           <div class="icons">
             <div class="stat-icon blue">
-              <i class="fa-solid fa-border-all"></i>
+              <i class="fa-solid fa-check"></i>
             </div>
+
             <button>
               <i class="fa-solid fa-ellipsis"></i>
             </button>
           </div>
-          <p>Completed Tasks</p>
-          <h2 class="count">10</h2>
-          <small class="positive">↗ +2 this month</small>
+
+          <p>Total Tasks</p>
+
+          <h3 class="count">0</h3>
+
+          <small class="due-week"> 0 due this week </small>
         </article>
-        <!--? End Complite Task State  -->
-        <!--? Start Overall Progress State  -->
-        <article class="state-card">
+
+        <!-- Completed Tasks -->
+
+        <article class="stat-card tasks-completed">
+          <div class="icons">
+            <div class="stat-icon green">
+              <i class="fa-solid fa-border-all"></i>
+            </div>
+
+            <button>
+              <i class="fa-solid fa-ellipsis"></i>
+            </button>
+          </div>
+
+          <p>Completed Tasks</p>
+
+          <h3 class="count">0</h3>
+
+          <small class="positive"> ↗ +0% from last week </small>
+        </article>
+        <!-- Overall Progress -->
+
+        <article class="stat-card">
           <div class="icons">
             <div class="stat-icon orange">
               <i class="fa-solid fa-arrow-trend-up"></i>
@@ -111,88 +146,49 @@
           <p>Overall Progress</p>
 
           <div class="stat-value">
-            <b>0%</b>
+            <b>17%</b>
             <div
               class="mini-ring"
               style="
-                background: conic-gradient(var(--primary) 0%, var(--border) 0);
+                background: conic-gradient(var(--primary) 17%, var(--border) 0);
               "
             >
-              <span>0</span>
+              <span>17</span>
             </div>
           </div>
 
           <small class="positive"> ↗ +5% from last month </small>
         </article>
-        <!--? End Overall Progress State  -->
       </section>
-      <!--?  End State Section  -->
-      <!--? Start Dashboard Grid  -->
+
+      <!--? End Stats -->
+
+      <!--? Start Dashboard Grid -->
+
       <section class="dashboard-grid">
-        <!--? Start Project Progress   -->
-        <article class="card progress-panal">
+        <!--? Start Project Progress -->
+
+        <article class="card progress-panel">
           <div class="heading-card">
             <div>
               <h3>Project Progress</h3>
               <p class="card-description">Your active projects at a glance</p>
             </div>
 
-            <a href="./project.html" class="veiw-all">
-              View All <i class="fa-solid fa-arrow-right"></i>
+            <a class="view-all" href="./projects.html">
+              View All
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
-          <div class="project-rows">
-            <div class="project-row">
-              <div class="stat-icon purple">
-                <i class="fa-regular fa-folder"></i>
-              </div>
-              <div class="project-info">
-                <div>
-                  <b>DivTask Dashboard</b>
-                  <small>11 of 15 tasks</small>
-                </div>
-                <div class="progress">
-                  <span class="purple"></span>
-                </div>
-              </div>
-              <div class="present">17%</div>
-            </div>
 
-            <div class="project-row">
-              <div class="stat-icon blue">
-                <i class="fa-regular fa-folder"></i>
-              </div>
-              <div class="project-info">
-                <div>
-                  <b>DivTask Dashboard</b>
-                  <small>11 of 15 tasks</small>
-                </div>
-                <div class="progress">
-                  <span class="blue"></span>
-                </div>
-              </div>
-              <div class="present">17%</div>
-            </div>
-            <div class="project-row">
-              <div class="stat-icon green">
-                <i class="fa-regular fa-folder"></i>
-              </div>
-              <div class="project-info">
-                <div>
-                  <b>DivTask Dashboard</b>
-                  <small>11 of 15 tasks</small>
-                </div>
-                <div class="progress">
-                  <span class="green"></span>
-                </div>
-              </div>
-              <div class="present">17%</div>
-            </div>
-          </div>
+          <div class="project-rows"></div>
         </article>
-        <!--? End Project Progress   -->
-        <!--?  Start Upcoming Deadlines   -->
-        <article class="card upcoming-daedlines">
+
+        <!--? End Project Progress -->
+
+        <!--? Start Upcoming Deadlines -->
+
+        <article class="card upcoming-deadlines">
           <div class="heading-card">
             <div>
               <h3>Deadlines</h3>
@@ -203,47 +199,78 @@
               <i class="fa-regular fa-calendar-days"></i>
             </button>
           </div>
-          <div class="daedlines-rows">
-            <div class="deadline-list">
-              <div class="icon-date red"><b>18</b><small>Dec</small></div>
-              <div class="info">
-                <p>DataBase</p>
-                <small>Api larining</small>
+
+          <!--? Filled By js/dashboard.js From The Real Tasks -->
+          <p class="empty-state">Create your first project to get started.</p>
+          <div class="deadline-rows">
+            <!-- <div class="deadline-list">
+              <div class="icon-date red">
+                <b>15</b>
+
+                <small>DEC</small>
               </div>
+
+              <div class="info">
+                <p>Database schema</p>
+
+                <small> API Learning </small>
+              </div>
+
               <div class="day red">Today</div>
             </div>
+
             <div class="deadline-list">
-              <div class="icon-date red"><b>18</b><small>Dec</small></div>
-              <div class="info">
-                <p>DataBase</p>
-                <small>Api larining</small>
+              <div class="icon-date orange">
+                <b>15</b>
+
+                <small>DEC</small>
               </div>
-              <div class="day red">Today</div>
+
+              <div class="info">
+                <p>Dashboard v2</p>
+
+                <small> DevTask Dashboard </small>
+              </div>
+
+              <div class="day orange">3 days</div>
             </div>
+
             <div class="deadline-list">
-              <div class="icon-date red"><b>18</b><small>Dec</small></div>
-              <div class="info">
-                <p>DataBase</p>
-                <small>Api larining</small>
+              <div class="icon-date green">
+                <b>18</b>
+
+                <small>DEC</small>
               </div>
-              <div class="day red">Today</div>
-            </div>
+
+              <div class="info">
+                <p>Portfolio launch</p>
+
+                <small> Portfolio Website </small>
+              </div>
+
+              <div class="day green">7 days</div>
+            </div> -->
           </div>
         </article>
-        <!--?  End Upcoming Deadlines   -->
-      </section>
-      <!--? End Dashboard Grid  -->
 
-      <!--?  Start Recent Tasks   -->
+        <!--? End Upcoming Deadlines -->
+      </section>
+
+      <!--? End Dashboard Grid -->
+
+      <!--? Start Recent Tasks -->
+
       <section class="card recent-tasks">
         <div class="heading-card">
           <div>
             <h3>Recent Tasks</h3>
-            <p class="card-description">Keep the momentum going</p>
-          </div>
 
-          <a href="./project.html" class="veiw-all">
-            View All <i class="fa-solid fa-arrow-right"></i>
+            <p>Keep the momentum going</p>
+          </div>
+          <a class="view-all" href="./tasks.html">
+            View All
+
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
         <div class="table-rows">
@@ -254,69 +281,32 @@
             <div>Status</div>
             <div>Due Date</div>
           </div>
+
           <div class="table-body">
             <div>
-              <b>
-                <input type="checkbox" name="" id="" /><span>DateBase</span>
+              <b
+                ><input type="checkbox" name="" id="" /> Build authentication
+                flow
               </b>
-              <span>DivTask Dashboard</span>
-              <span class="badge High">High</span>
-              <span class="badge Todo">Todo</span>
-              <span class="due-date crrunt">
-                <i class="fa-solid fa-clock"></i>Today
+              <span>DevTask Dashboard </span>
+              <span class="badge high">High</span>
+              <span class="badge todo">Todo</span>
+              <span class="due-day current"
+                ><i class="fa-solid fa-clock"></i>Today
               </span>
               <button>
                 <i class="fa-solid fa-ellipsis"></i>
               </button>
             </div>
             <div>
-              <b>
-                <input type="checkbox" name="" id="" /> <span>DateBase</span>
-              </b>
-              <span>DivTask Dashboard</span>
-              <span class="badge High">High</span>
-              <span class="badge Todo">Todo</span>
-              <span class="due-date crrunt">
-                <i class="fa-solid fa-clock"></i>Today
-              </span>
-              <button>
-                <i class="fa-solid fa-ellipsis"></i>
-              </button>
-            </div>
-            <div>
-              <b>
-                <input type="checkbox" name="" id="" /> <span>DateBase</span>
-              </b>
-              <span>DivTask Dashboard</span>
-              <span class="badge High">High</span>
-              <span class="badge Todo">Todo</span>
-              <span class="due-date crrunt">
-                <i class="fa-solid fa-clock"></i>Today
-              </span>
-              <button>
-                <i class="fa-solid fa-ellipsis"></i>
-              </button>
-            </div>
-            <div>
-              <b>
-                <input type="checkbox" name="" id="" /> <span>DateBase</span>
-              </b>
-              <span>DivTask Dashboard</span>
-              <span class="badge High">High</span>
-              <span class="badge Todo">Todo</span>
-              <span class="due-date crrunt">
-                <i class="fa-solid fa-clock"></i>Today
-              </span>
-              <button>
-                <i class="fa-solid fa-ellipsis"></i>
-              </button>
-            </div>
           </div>
         </div>
       </section>
-      <!--?  End Recent Tasks   -->
+
+      <!--? End Recent Tasks -->
     </main>
     <!--? End Dashboard -->
+
     <script src="./js/sidebar.js"></script>
     <script type="module" src="./js/main.js"></script>
     <script type="module" src="./js/dashboard.js"></script>

@@ -56,7 +56,7 @@ fetch("../components/header.html")
     date.textContent = `${daysOfWeek[crruntDay]}, ${monthsOfYear[crruntMonth]} ${crruntDate}`;
 
     //? Dark And Light
-    let buttonThems = document.querySelector(".dark-mode-btn");
+    let buttonThems = document.querySelector(".dark-mode");
 
     //? Theme Icons
     let faMonn = "fa-moon";
@@ -140,14 +140,14 @@ fetch("../components/header.html")
     const ntfBtn = document.querySelector(".notifications-btn"),
       ntfList = document.querySelector(".notifications-list"),
       read = document.querySelector(".mark-as-read"),
-      empty = document.querySelector(".reslut");
+      empty = document.querySelector(".result");
 
     ntfBtn.addEventListener("click", () => {
       ntfList.classList.toggle("open");
       if (!empty.classList.contains("empty")) {
         read.addEventListener("click", (e) => {
           empty.innerHTML = "";
-          empty.innerHTML = `<div calss = "icon" ><i calss="fa-solid fa-box-open"></i> </div>
+          empty.innerHTML = `<div class = "icon" ><i class="fa-solid fa-box-open"></i> </div>
           <h2>Empty</h2>`;
         });
       }

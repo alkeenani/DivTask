@@ -2,51 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--? Font Awesome -->
+
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <title>Document</title>
+
+    <title>settings</title>
   </head>
   <body>
-    <!--? Start Mobile Overlay  -->
+    <!--? Start Splach Screen Container -->
+
     <div class="mobile-overlay"></div>
-    <!--? End Mobile Overlay  -->
 
-    <!--? Start SideBar Container  -->
+    <!--? End Splach Screen Container -->
+
+    <!--? Start Aside Container -->
+
     <aside id="sidebar"></aside>
-    <!--? End SideBar Container  -->
 
-    <!--? Start Header Container  -->
+    <!--? End Aside Container -->
+
+    <!--? Start Header -->
+
     <header id="header"></header>
-    <!--? End Header Container  -->
-    <!--? Start Settings Page   -->
+
+    <!--? End Header -->
     <div class="page settings-section">
-      <!--? Satrt Heading Page  -->
       <div class="page-heading">
         <div>
           <p>PREFERENCES</p>
+
           <h2 class="user-name">Settings</h2>
+
           <h3>Manage your profile and personalize your DevTask experience.</h3>
         </div>
       </div>
-      <!--? End Heading Page  -->
-
       <div class="settings-layout">
         <div class="card">
           <div class="profile-edit">
-            <div class="imge-profile">MA</div>
+            <div class="image-profile">MA</div>
             <div class="instructs">
               <button class="change-photo">Change Photo</button>
+
+              <!--? Hidden Input - The Button Above Opens It -->
+
               <input type="file" id="photo" accept="image/*" hidden />
-              <p>JPG , GIF OR PNG MAX 2MB</p>
+
+              <p>JPG, GIF or PNG. Max 2MB</p>
             </div>
           </div>
-          <!--? Start From Grid  -->
           <div class="form-grid">
             <label for="first-name"
               >First Name
@@ -93,15 +102,14 @@
               ></textarea>
             </label>
           </div>
-          <!--? End From Grid  -->
-          <!--? Start Settings Action  -->
+
+          <!--? Validation / Confirmation Message -->
+
           <div class="settings-actions">
-            <button class="rest-profile">Rest</button>
-            <button class="save-profile">Save</button>
+            <button class="reset-profile">Reset</button
+            ><button class="save-profile">Save changes</button>
           </div>
         </div>
-        <!--? End Settings Action  -->
-        <!--? Start Card Settings Data  -->
         <div class="card settings-data">
           <div class="heading-card">
             <div>
@@ -117,12 +125,10 @@
             <div><span>Storage used</span><b class="count-size">0 B</b></div>
           </div>
         </div>
-        <!--? End Card Settings Data  -->
       </div>
     </div>
-    <!--? End Settings Page   -->
     <script src="./js/sidebar.js"></script>
-
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/settings.js"></script>
   </body>
 </html>

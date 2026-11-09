@@ -29,7 +29,7 @@
 
   /*? Header */
 
-  .header-action .search-box {
+  .header-actions .search-box {
     display: none;
   }
 
@@ -46,7 +46,7 @@
 @media (max-width: 1110px) {
   /*? Summary Grids */
 
-  .state-grid,
+  .stats-grid,
   .task-summary,
   .note-section .note-summary {
     grid-template-columns: repeat(2, 1fr);
@@ -68,8 +68,8 @@
 
   /*? Single-Column Grids */
 
-  .state-grid,
-  .task-summray,
+  .stats-grid,
+  .task-summary,
   .note-section .note-summary,
   .repo-grid {
     grid-template-columns: 1fr;

@@ -20,7 +20,7 @@ fetch("./components/addtask.html")
       taskDate = document.querySelector(".add-list [type='date']"),
       createTask = document.querySelector(".add-list .create-task"),
       taskCount = document.querySelector(".tasks-card .count"),
-      taskComplited = document.querySelector(".tasks-complited .count");
+      taskComplited = document.querySelector(".tasks-completed .count");
     //? Event Open Modal
     addTask.forEach((button) => {
       button.addEventListener("click", () => {
@@ -66,12 +66,12 @@ fetch("../components/addproject.html")
     const newProject = document.querySelectorAll(".new-project"),
       addproject = document.querySelector(".project-list"),
       btnOvrelay = document.querySelector(".btn-overlay"),
-      closebtn = addproject ? addproject.querySelectorAll(".colsebtn") : [],
+      closebtn = addproject ? addproject.querySelectorAll(".closebtn") : [],
       cancelbtn = addproject ? addproject.querySelectorAll(".cancel") : [],
       projectName = document.querySelector(".project-list .project-name"),
       projectDes = document.querySelector(".project-list .project-des"),
       projectCategroy = document.querySelector(
-        ".project-list .project-categroy",
+        ".project-list .project-category",
       ),
       projectImportance = document.querySelector(".project-list .importance"),
       projectDate = document.querySelector(".project-list [type = 'date']"),

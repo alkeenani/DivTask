@@ -19,7 +19,7 @@ fetch("./components/addtask.html")
       taskDate = document.querySelector(".add-list [type='date']"),
       createTask = document.querySelector(".add-list .create-task"),
       taskCount = document.querySelector(".tasks-card .count"),
-      taskComplited = document.querySelector(".tasks-complited .count");
+      taskComplited = document.querySelector(".tasks-completed .count");
     //? Event Open Modal
     addTask.forEach((button) => {
       button.addEventListener("click", () => {

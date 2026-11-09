@@ -306,7 +306,7 @@ function addTaskInPage(
         ${status === "Progress" ? "In Progress" : status}
       </span>
 
-      <span class="due-day crrunt">
+      <span class="due-day current">
         <i class="fa-solid fa-clock"></i>
         ${dateText}
       </span>
@@ -442,12 +442,12 @@ function checkTask(
   });
 }
 
-//? Completed Tasks
+// Completed Tasks
 function getCompletedTasks() {
   return TaskInfo.filter((task) => task.completed);
 }
 
-//? In Progress Tasks
+// In Progress Tasks
 function getInProgressTasks() {
   const currentDate = new Date();
   currentDate.setHours(0, 0, 0, 0);
