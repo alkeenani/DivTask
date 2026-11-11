@@ -2,89 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
 
-    <!--? Font Awesome -->
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-
     <link rel="stylesheet" href="./css/responsive.css" />
-    <title>Document</title>
+
+    <title>Note</title>
   </head>
   <body>
-    <!--? Start Mobile Overlay  -->
+    <!--? Start Splach Screen Container -->
+
     <div class="mobile-overlay"></div>
-    <!--? End Mobile Overlay  -->
 
-    <!--? Start SideBar Container  -->
+    <!--? End Splach Screen Container -->
+
+    <!--? Start Aside Container -->
+
     <aside id="sidebar"></aside>
-    <!--? End SideBar Container  -->
 
-    <!--? Start Header Container  -->
+    <!--? End Aside Container -->
+
+    <!--? Start Header -->
+
     <header id="header"></header>
-    <!--? End Header Container  -->
-    <!--? Start Note Page  -->
+
+    <!--? End Header -->
     <div class="page note-section">
-      <!--? Start Heading Page  -->
       <div class="page-heading">
         <div>
-          <p>IDESA</p>
-          <h2 class="user-name">Tasks</h2>
+          <p>IDEAS</p>
+
+          <h2 class="user-name">Notes</h2>
+
           <h3>Capture ideas, references, and everything worth remembering.</h3>
         </div>
         <button class="new-note">
-          <i class="fa-solid fa-plus"></i>New Note
+          <i class="fa-solid fa-plus"></i>
+
+          New note
         </button>
       </div>
-      <!--? End Heading Page  -->
-      <!--? Start Summary Section  -->
       <div class="note-summary">
-        <!--? Start Card Summary -->
         <div class="card total">
           <div class="stat-icon purple">
             <i class="fa-solid fa-note-sticky"></i>
           </div>
           <div class="info">
             <h3 class="count">0</h3>
-            <p>Total Note</p>
+            <p>Total notes</p>
           </div>
         </div>
-        <!--? End Card Summary -->
-        <!--? Satrt Card Summary -->
         <div class="card important">
           <div class="stat-icon orange">
             <i class="fa-solid fa-star"></i>
           </div>
           <div class="info">
             <h3 class="count">0</h3>
-            <p>Important Note</p>
+            <p>Important</p>
           </div>
         </div>
-        <!--? End Card Summary -->
-        <!--? Start Card Summary -->
         <div class="card normal">
           <div class="stat-icon green">
-            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
           </div>
           <div class="info">
             <h3 class="count">0</h3>
-            <p>Normal Note</p>
+            <p>Normal</p>
           </div>
         </div>
-        <!--? End Card Summary -->
       </div>
 
-      <!--? End Summary Section  -->
-
-      <!--? Start Secrch Box  -->
       <div class="search-box">
-        <input type="text" placeholder="Secrch.." />
+        <input type="text" placeholder="search" />
       </div>
-      <!--? End Secrch Box  -->
-      <!--? Start Note Cards  -->
+      <!--? Filled By js/notes.js From The Saved Notes -->
+
       <div class="note-cards">
         <div class="card note important">
           <div>
@@ -94,35 +91,17 @@
               <i class="fa-regular fa-trash-can del-btn"></i>
             </div>
           </div>
-          <b class="note-name">Task1</b>
-          <p class="note-description">This My Frist Tasks</p>
-          <span class="note-date">
-            <i class="fa-regular fa-calendar-days"></i>
-            Today
-          </span>
-        </div>
-        <div class="card note normal">
-          <div>
-            <span class="badge type">DivTask2</span>
-            <div class="add-del">
-              <i class="fa-regular fa-pen-to-square edit-btn"></i>
-              <i class="fa-regular fa-trash-can del-btn"></i>
-            </div>
-          </div>
-          <b class="note-name">Task1</b>
-          <p class="note-description">This My Frist Tasks</p>
+          <b class="note-name">Tasks1</b>
+          <p class="note-description">This Frist TASK in DivTask Project</p>
           <span class="note-date">
             <i class="fa-regular fa-calendar-days"></i>
             Today
           </span>
         </div>
       </div>
-      <!--? End Note Cards  -->
     </div>
-
-    <!--? End Note Page  -->
     <script src="./js/sidebar.js"></script>
-    <script type="module" src="./js/notes.js"></script>
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/notes.js"></script>
   </body>
 </html>

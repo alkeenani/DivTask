@@ -1668,7 +1668,8 @@ nav ul li.general-title p {
   margin-top: 50px;
 }
 
-.task-summary .card {
+.task-summary .card,
+.note-summary .card {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1676,14 +1677,27 @@ nav ul li.general-title p {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 11px;
+  transition:
+    background var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
 }
 
-.task-summary .card .info h3 {
+.task-summary .card:hover,
+.note-summary .card:hover {
+  transform: translateY(-3px);
+}
+
+.task-summary .card .info h3,
+.note-summary .card .info h3 {
   margin: 0 0 5px 0;
+  font-size: 23px;
   color: var(--text);
 }
 
-.task-summary .card .info p {
+.task-summary .card .info p,
+.note-summary .card .info p {
+  margin: 0;
   font-size: 10px;
   color: var(--muted);
 }
