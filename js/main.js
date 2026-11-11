@@ -1,8 +1,61 @@
+import { getProfile, fillAvatar } from "./profileData.js";
+
 // ? Get Header Component
 fetch("../components/header.html")
   .then((res) => res.text())
   .then((data) => {
     document.querySelector("#header").innerHTML = data;
+
+    //? Paint The Saved Profile In The Header
+    const paintHeaderProfile = () => {
+      const profile = getProfile(),
+        avatar = document.querySelector(".header-user .imge-profile"),
+        name = document.querySelector(".header-profile-name"),
+        role = document.querySelector(".header-profile-role");
+
+      if (name) {
+        name.textContent =
+          `${profile.firstName || ""} ${profile.lastName || ""}`.trim() ||
+          "User";
+      }
+
+      if (role) {
+        role.textContent = profile.role || "Member";
+      }
+
+      fillAvatar(avatar, profile);
+    };
+
+    paintHeaderProfile();
+    window.addEventListener("profileUpdated", paintHeaderProfile);
+
+    //? Paint The Saved Profile Image In The Sidebar
+    const paintSidebarProfile = () => {
+      const avatar = document.querySelector("#sidebar .imge-profile");
+
+      if (avatar) {
+        fillAvatar(avatar);
+      }
+    };
+
+    paintSidebarProfile();
+    window.addEventListener("profileUpdated", paintSidebarProfile);
+
+    //? The Sidebar Is Injected Separately, So Wait For It
+    if (!document.querySelector("#sidebar .imge-profile")) {
+      const sidebarEl = document.querySelector("#sidebar");
+
+      if (sidebarEl) {
+        const sidebarObserver = new MutationObserver(() => {
+          if (document.querySelector("#sidebar .imge-profile")) {
+            paintSidebarProfile();
+            sidebarObserver.disconnect();
+          }
+        });
+
+        sidebarObserver.observe(sidebarEl, { childList: true });
+      }
+    }
     //? Get Crrunt Page Name
     const crruntPage =
         window.location.pathname.split("/").pop() || "index.html",
