@@ -1091,11 +1091,16 @@ a.imge-profile:focus-visible {
   justify-content: space-between;
 }
 
-.icons > button {
+.icons > a {
   border: 0;
   background: transparent;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 12px;
+  transition: var(--transition);
+}
+.icons > a:hover {
+  transform: translateX(-2px);
+  color: var(--primary);
 }
 
 .stat-icon {
